@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Pharmacy Products</title>
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  <link rel="stylesheet prefetch" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+      <link rel="stylesheet" href="css/style.css">
+ 
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+  
+</head>
+
+<body onload="viewdat()">
+
+      <div id="wrapper">
+        <div class="overlay"></div>
+    
+        <!-- Sidebar 
+        <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+            <ul class="nav sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                       Pharmacy
+                    </a>
+                </li>
+                <li class="dropdown">
+                  <a href="../home/home.html"><i class="fa fa-fw fa-home"></i> Dashboard</a>
+                </li>
+                <li>
+                    <a href="../transactions/transactions.html"><i class="fa fa-truck"></i>Transactions</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-medkit"></i>Products</a>
+                </li>
+            </ul>
+        </nav>
+        -->
+
+        <!-- Page Content 
+        <div>
+          <button type="button" class="hamburger is-closed animated fadeInLeft" data-toggle="offcanvas">
+            <span class="hamb-top"></span>
+            <span class="hamb-middle"></span>
+            <span class="hamb-bottom"></span>
+          </button>-->
+                
+<h2>PRODUCTS</h2>
+                <!--
+               <button id="res" type="button" class="btn btn-default btn-lg" style="background-color: black;" onclick="javascript:togva()">Add new product</button>
+            <button id="re" type="button" class="btn btn-default btn-lg" style="background-color: black;" onclick="javascript:togvr()">Restock</button>
+                             <button id="vw" type="button" class="btn btn-default btn-lg" style="background-color: black;" onclick="javascrpt:togvt()">VIEW inventory</button>
+                                                    -->
+                <div id="adina" style="display:none;">
+                    <form action="javascript:addpro()">
+                        <label for="pcode">Product code :</label>
+                          <input type="text"  id="pcode">
+                         <label for="pname">Product Name :</label>
+                          <input type="text" id="pname">                       
+                        <label for="pd">Product Description :</label>
+                          <input type="text"  id="pd">
+                        <label for="mn">Manufacturer Name :</label>
+                          <input type="text"  id="mn">                        
+                        <label for="dman">Date of manufacturing : </label>
+                          <input type="date"  id="dman">
+                        <label for="dexp">Date of Expiry : </label>
+                          <input type="date"  id="dexp">
+                        <label for="stype">Storage Type :</label>
+                          <input type="text" id="stype">
+                        <label for="stock">Remaining Stock :</label>
+                          <input type="text"  id="stock">                    
+                        <label for="cost">Unit cost :</label>
+                          <input type="text" id="cost">
+                        <label for="bcode">Bcode :</label>
+                          <input type="text" id="bcode">
+
+                        <button type="submit" class="btn btn-primary mb-2" style="margin-left: 48%; margin-top: 2%;">Submit</button>
+                  </form>
+                    </div>
+                               
+ 
+                <div id="adinv" style="display:none; margin-left: 4%;margin-top: 5%;">
+                    <form class="form-inline" action="javascript:addinv()">
+                        <label for="mnam" class="mr-sm-2" style="margin-left: 2%;">Manufacturer name :</label>
+                          <input type="text" class="form-control mb-2 mr-sm-2" id="mnam">
+                        <label for="pcode" class="mr-sm-2" style="margin-left: 2%;">Product code :</label>
+                          <input type="text" class="form-control mb-2 mr-sm-2" id="pcode2">
+                          <label for="stock" class="mr-sm-2" style="margin-left: 2%;">Additional Stock :</label>
+                          <input type="text" class="form-control mb-2 mr-sm-2" id="stock2">
+                          <button type="submit" class="btn btn-primary mb-2" style="margin-left: 3%;">Submit</button>
+                        </form>
+                </div>
+            
+
+
+                        
+ <div id="vwtab">
+<div id="treatment-plan">
+	<div class="table-responsive">
+		<table class="table table-bordered">
+			<thead>
+				<tr>
+					<th>Product Code</th>
+                    <th>Name</th>
+					<th>Product description</th>
+                    <th>Manufacturer Name</th>
+					<th>Date Manufactured</th>
+					<th>Expiry Date</th>
+					<th>Storage Type</th>
+					<th>Remaining Stock</th>
+                    <th>Unit Cost</th>
+					<th>Barcode</th>
+				</tr>
+			</thead>
+			<tbody id="tbd">
+				
+
+			</tbody>
+		</table>
+	</div>
+</div>
+</div>                       
+
+
+            </div>
+          </div>
+
+</body>
+
+</html>

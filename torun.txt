@@ -1,0 +1,7 @@
+bc: geth --rpc --rpcport "8545" --rpccorsdomain "*" --datadir "./data" --port "30303" --rpcapi "db,eth,net,web3,personal,admin,miner" --networkid 15 --preload "startmine.js" console
+
+mongodb: "C:\Program Files\MongoDB\Server\3.6\bin\mongod.exe" --dbpath "C:\Users\hp\Desktop\HackInvE\DB"
+
+node midman.js
+
+ng serve
